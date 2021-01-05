@@ -144,8 +144,8 @@ def kcfold(X, y, C, penalty, K):
             validation_dict.append({"C": c, "penalty": p, "roc_auc": roc_auc_vec.mean()})
     return validation_dict
 
-
 def plt_2d_pca(X_pca, y):
+
     fig = plt.figure(figsize=(8, 8))
     ax = fig.add_subplot(111, aspect='equal')
     ax.scatter(X_pca[y==0, 0], X_pca[y==0, 1], color='b')
